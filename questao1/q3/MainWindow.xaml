@@ -1,0 +1,24 @@
+﻿<Window x:Class="q3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:q3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="500">
+    <Grid>
+        <GroupBox Header="Intervalo" HorizontalAlignment="Left" Height="114" Margin="29,22,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBox x:Name="txti" HorizontalAlignment="Left" Height="20" Margin="39,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76" RenderTransformOrigin="0.16,0.381"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="39,62,0,0" TextWrapping="Wrap" Text="Início" VerticalAlignment="Top" Width="84"/>
+        <TextBlock HorizontalAlignment="Left" Height="19" Margin="128,62,0,0" Text="fim" VerticalAlignment="Top" Width="38"/>
+        <TextBox x:Name="txtf" HorizontalAlignment="Left" Height="20" Margin="128,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76"/>
+        <GroupBox Header="Opções" HorizontalAlignment="Left" Height="93" Margin="29,141,0,0" VerticalAlignment="Top" Width="179"/>
+        <CheckBox x:Name="cpar" Content="Pares" HorizontalAlignment="Left" Height="29" Margin="39,177,0,0" VerticalAlignment="Top" Width="128"/>
+        <CheckBox x:Name="imp" Content="Ímpares" HorizontalAlignment="Left" Height="21" Margin="39,206,0,0" VerticalAlignment="Top" Width="84"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="188" Margin="262,39,0,0" VerticalAlignment="Top" Width="187"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Height="20" Margin="39,239,0,0" VerticalAlignment="Top" Width="212" Click="Button_Click"/>
+
+
+
+    </Grid>
+</Window>
