@@ -20,6 +20,11 @@ namespace q2
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
             esfera v = new esfera();
             v.Setraio(double.Parse(txtr.Text));
             txta.Text = v.CalqA().ToString();
@@ -39,7 +44,7 @@ namespace q2
         }
         public double CalqA()
         {
-            return (4 * 3.14 * Math.Pow (raio,2));
+            return (3.14 * Math.Pow (raio,2));
         }
         public double CalqV()
         {

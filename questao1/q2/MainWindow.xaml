@@ -12,8 +12,8 @@
         <TextBox x:Name="txtv" HorizontalAlignment="Left" Height="29" Margin="202,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="102"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="39,10,0,0" TextWrapping="Wrap" Text="Raio" VerticalAlignment="Top" Width="102"/>
         <TextBlock HorizontalAlignment="Left" Height="25" Margin="39,124,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top" Width="102"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="202,129,0,0" TextWrapping="Wrap" Text="Volumwe" VerticalAlignment="Top" Width="102"/>
-        <Button Content="Calcular" HorizontalAlignment="Left" Height="31" Margin="39,88,0,0" VerticalAlignment="Top" Width="265"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="202,129,0,0" TextWrapping="Wrap" Text="Volume" VerticalAlignment="Top" Width="102"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Height="31" Margin="39,88,0,0" VerticalAlignment="Top" Width="265" Click="Button_Click"/>
 
     </Grid>
 </Window>

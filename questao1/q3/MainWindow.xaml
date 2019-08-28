@@ -15,8 +15,8 @@
         <GroupBox Header="Opções" HorizontalAlignment="Left" Height="93" Margin="29,141,0,0" VerticalAlignment="Top" Width="179"/>
         <CheckBox x:Name="cpar" Content="Pares" HorizontalAlignment="Left" Height="29" Margin="39,177,0,0" VerticalAlignment="Top" Width="128"/>
         <CheckBox x:Name="imp" Content="Ímpares" HorizontalAlignment="Left" Height="21" Margin="39,206,0,0" VerticalAlignment="Top" Width="84"/>
-        <ListBox x:Name="list" HorizontalAlignment="Left" Height="188" Margin="262,39,0,0" VerticalAlignment="Top" Width="187"/>
-        <Button Content="Calcular" HorizontalAlignment="Left" Height="20" Margin="39,239,0,0" VerticalAlignment="Top" Width="212" Click="Button_Click"/>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="237" Margin="245,22,0,0" VerticalAlignment="Top" Width="204"/>
+        <Button Content="Calcular" HorizontalAlignment="Left" Height="20" Margin="29,239,0,0" VerticalAlignment="Top" Width="179" Click="Button_Click"/>
 
 
 

@@ -48,16 +48,16 @@ namespace q3
         }
         public int[] Calcular(bool i,bool p)
         {
-            int[] carai = new int[f-this.i+1];
+            int[] ns = new int[f-this.i+1];
             int s = 0;
             for(int x = this.i; x <= f; x++)
             {
-                if (x % 2 == 0 && p == true) carai[s++] = x;
-                if (x % 2 != 0 && i == true) carai[s++] = x;
+                if (x % 2 == 0 && p == true) ns[s++] = x;
+                if (x % 2 != 0 && i == true) ns[s++] = x;
 
             }
             int[] l = new int[s];
-            Array.Copy(carai, l, s);
+            Array.Copy(ns, l, s);
             return l;
 
         }
