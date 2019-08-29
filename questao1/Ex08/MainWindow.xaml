@@ -7,9 +7,77 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="52,103,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="165,103,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="267,103,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1  *"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Loja" Grid.ColumnSpan="2" Margin="4,4,4,0" FontSize="15px">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Nome:" VerticalAlignment="Center" FontSize="20px"/>
+                <TextBox x:Name="Nome" Grid.Row="1" VerticalAlignment="Center" FontSize="20px"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Veiculos" Grid.Row="1" Margin="4,4,4,0" FontSize="15px">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Placa:" VerticalAlignment="Center" FontSize="20px"/>
+                <TextBox x:Name="Placa" Grid.Row="1" VerticalAlignment="Center" FontSize="20px" Margin="2,2,2,2"/>
+                <TextBlock Grid.Row="2" Text="Fabricante:" VerticalAlignment="Center" FontSize="20px"/>
+                <TextBox x:Name="Fabricante" Grid.Row="3" VerticalAlignment="Center" FontSize="20px" Margin="2,2,2,2"/>
+                <TextBlock Grid.Row="4" Text="Modelo:" VerticalAlignment="Center" FontSize="20px"/>
+                <TextBox x:Name="Modelo" Grid.Row="5" VerticalAlignment="Center" FontSize="20px" Margin="2,2,2,2"/>
+                <TextBlock Grid.Row="6" Text="Máximo Valor:" VerticalAlignment="Center" FontSize="15px"/>
+                <TextBox x:Name="Max" Grid.Row="7" VerticalAlignment="Center" FontSize="20px" Margin="2,2,2,2"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="Preço:" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox x:Name="Preco" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" FontSize="20" Margin="2,2,2,2"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="Ano:" VerticalAlignment="Center" FontSize="20"/>
+                <TextBox x:Name="Ano" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" FontSize="20" Margin="2,2,2,2"/>
+                <CheckBox x:Name="Vendido" Grid.Row="5" Grid.Column="1" Content="Vendido" FontSize="15" VerticalAlignment="Center"/>
+                <Button Grid.Column="2" Grid.RowSpan="2" Margin="5,5,5,5" Content="Inserir" FontSize="20" Click="Button_Click"/>
+                <Button Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="5,5,5,5" Content="Listar" FontSize="20" Click="Button_Click_1"/>
+                <Button Grid.Column="2" Grid.Row="4" Grid.RowSpan="2" Margin="5,5,5,5" Content="Listar Valor" FontSize="20" Click="Button_Click_2"/>
+                <Button Grid.Column="2" Grid.Row="6" Grid.RowSpan="2" Margin="5,5,5,5" Content="Total" FontSize="20" Click="Button_Click_3"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Saida" Grid.Column="1" Grid.Row="1" Margin="4,4,4,4" FontSize="15">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="6*"/>
+                </Grid.RowDefinitions>
+                <Button Margin="5,5,5,5" Content="Vender" FontSize="20" Grid.RowSpan="2" Click="Button_Click_4"/>
+                <TextBlock Grid.Column="1" Text="Valor:" FontSize="20"/>
+                <TextBox x:Name="Valor" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" FontSize="20" Margin="2,2,2,2"/>
+                <ListBox x:Name="Listar" Grid.Row="2" Grid.ColumnSpan="2"/>
+            </Grid>
+        </GroupBox>
     </Grid>
+
 </Window>

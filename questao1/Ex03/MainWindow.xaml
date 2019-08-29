@@ -1,0 +1,25 @@
+﻿<Window x:Class="Ex03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex03"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="500">
+    <Grid>
+        <GroupBox Header="Área e Diagonal" HorizontalAlignment="Left" Height="281" Margin="10,20,0,0" VerticalAlignment="Top" Width="461">
+            <Grid Margin="2,0,-2,0">
+                <TextBlock HorizontalAlignment="Left" Height="23" Margin="48,42,0,0" TextWrapping="Wrap" Text="Base" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Margin="245,42,0,0" TextWrapping="Wrap" Text="Altura" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txth" HorizontalAlignment="Left" Height="23" Margin="245,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBlock HorizontalAlignment="Left" Height="23" Margin="48,159,0,0" TextWrapping="Wrap" Text="Área" VerticalAlignment="Top" Width="82"/>
+                <TextBlock HorizontalAlignment="Left" Height="21" Margin="246,159,0,0" TextWrapping="Wrap" Text="Diagonal" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txta" HorizontalAlignment="Left" Height="23" Margin="48,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txtb" HorizontalAlignment="Left" Height="23" Margin="48,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <TextBox x:Name="txtd" HorizontalAlignment="Left" Height="23" Margin="246,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+                <Button Content="Calcular" HorizontalAlignment="Left" Height="26" Margin="48,119,0,0" VerticalAlignment="Top" Width="318" Click="Button_Click"/>
+
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
