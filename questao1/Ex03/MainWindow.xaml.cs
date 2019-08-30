@@ -27,11 +27,22 @@ namespace Ex03
         
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Retangulo f = new Retangulo(double.Parse(txtb.Text), double.Parse(txth.Text));
+            txta.Text = f.CalqA().ToString();
+            txtd.Text = f.CalcD().ToString();
         }
         class Retangulo
         {
             private double b, h;
+            private double v1;
+            private double v2;
+
+            public Retangulo(double v1, double v2)
+            {
+                this.v1 = v1;
+                this.v2 = v2;
+            }
+
             public void SetB (double bas)
             { if (b > 0) b = bas; }
 
@@ -46,7 +57,8 @@ namespace Ex03
             { return h * b; }
 
             public double CalcD()
-            { return }
+            { return Math.Sqrt(b * b + h * h); }
         }
     }
 }
+
