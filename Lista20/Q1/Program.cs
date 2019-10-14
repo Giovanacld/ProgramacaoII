@@ -8,8 +8,12 @@ namespace Q1
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+          Conversor c = new Conversor();
+          c.SetNum(245);
+          Console.WriteLine(c.Binario());
         }
     }
 }
+
