@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{29ECC215-8C40-4C56-823C-00A1C67139A0}</ProjectGuid>
+    <ProjectGuid>{0FA0386A-A8F6-418A-86C8-A3BC0B8F87ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Q1</RootNamespace>
-    <AssemblyName>Q1</AssemblyName>
+    <RootNamespace>Q3</RootNamespace>
+    <AssemblyName>Q3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContaCorrente.cs" />
+    <Compile Include="ContaEspecial.cs" />
+    <Compile Include="Poupança.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Quadrado.cs" />
-    <Compile Include="Retangulo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
