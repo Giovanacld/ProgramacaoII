@@ -19,7 +19,7 @@ namespace Q2
         }
         public override string ToString()
         {
-            return $"{seguro}";
+            return $"{CalcFrete()} {seguro}";
         }
     }
 }

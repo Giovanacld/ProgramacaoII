@@ -13,7 +13,7 @@ namespace Q5
         private int k, j; // grupo (k) contato (j)
         public Usuario(string n, string f) : base(n, f) { }
         public override string ToString()
-        {  //como eu referencio o nome e o fone se eles tão no msm metodo? e os vetores?
+        {
             return $"Nome:{base.nome}  Fone{base.fone} Total de Grupos:{k} Total de Contatos{j}";
         }
         public void InserirGrupo(Grupo g)
@@ -37,3 +37,4 @@ namespace Q5
             return novo;
         }
     }
+}

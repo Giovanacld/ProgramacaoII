@@ -20,7 +20,7 @@ namespace Q2
         }
         public override string ToString()
         {
-            return $"{distancia} {peso}";
+            return $"{distancia} {peso} {CalcFrete()}";
         }
     }
 }

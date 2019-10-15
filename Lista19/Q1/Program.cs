@@ -10,6 +10,10 @@ namespace Q1
     {
         static void Main(string[] args)
         {
+            Retangulo r = new Retangulo(5, 4);
+            Console.WriteLine(r.ToString());
+            Quadrado q = new Quadrado(6);
+            Console.WriteLine(q.ToString());
         }
     }
 }
