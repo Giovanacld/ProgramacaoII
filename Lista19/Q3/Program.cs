@@ -10,6 +10,11 @@ namespace Q3
     {
         static void Main(string[] args)
         {
+            ContaCorrente c = new ContaCorrente("Gio", "666");
+            c.Depositar(500);
+            c.Sacar(20);
+            Console.WriteLine(c.RetornarSaldo);
+            Console.WriteLine(c.ToString);
         }
     }
 }

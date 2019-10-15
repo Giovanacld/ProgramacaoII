@@ -10,6 +10,10 @@ namespace Q2
     {
         static void Main(string[] args)
         {
+            Frete f = new Frete(100, 20);
+            Console.WriteLine(f.ToString());
+            FreteExp fe = new FreteExp(2);
+            Console.WriteLine(fe.ToString());
         }
     }
 }
