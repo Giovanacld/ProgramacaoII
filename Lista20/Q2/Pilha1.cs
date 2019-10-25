@@ -8,7 +8,7 @@ namespace Q2
 {
     class Pilha1<T>
     {
-        private List<T> lista;
+        private List<T> lista = new List<T>();
         public int Count()
         {
             return lista.Count;
@@ -17,9 +17,11 @@ namespace Q2
         {
             return lista[0];
         }
-        public T Pop(T r)
+        public T Pop()
         {
-            return lista.Remove(r);
+            T b = lista[lista.Count() - 1];
+            lista.RemoveAt(lista.Count() - 1);
+            return b;
         }
 
         public void Push(T a)
